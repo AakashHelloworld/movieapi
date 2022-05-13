@@ -1,0 +1,345 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.small_box {
+  width: 250px;
+  background-color: grey;
+  margin: 1rem;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+.small_box img {
+  max-width: 100%;
+}
+.big_box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: gray;
+}
+.small_box_over {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: gold;
+  transform: translateY(222px);
+  transition: transform 0.2s ease-in-out;
+  font-weight: 900;
+  font-size: medium;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.small_box:hover .small_box_over {
+  transform: translateY(0px);
+}
+
+.smalll_box_over {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: gold;
+  transform: translateX(-322px);
+  transition: transform 0.2s ease-in-out;
+  width: 30%;
+  height: 20%;
+  border-radius: 0 0 25px 0;
+  text-align: center;
+  font-weight: 900;
+  font-size: large;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.small_box:hover .smalll_box_over {
+  transform: translateX(0px);
+}
+
+.line {
+  max-width: 100px;
+  margin: 2rem auto;
+  background-color: red;
+  height: 5px;
+}
+
+#outlined-basic {
+  text-align: center;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.signin_box {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.login_box {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.box {
+  height: fit-content;
+  width: fit-content;
+  background-color: white;
+  padding: 5%;
+  box-shadow: 2px 2px 5px black;
+  border-radius: 5px;
+  text-align: center;
+}
+input {
+  outline: none;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 1%;
+  margin: 1%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.box_items {
+  margin: 2%;
+}
+label {
+  margin: 2%;
+  font-size: medium;
+}
+.submit {
+  padding: 5%;
+  cursor: pointer;
+  background-color: rgb(176, 176, 230);
+  border: none;
+}
+.submit:hover {
+  background-color: orange;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+}
+.displaynone {
+  display: none;
+}
+.navbar {
+  display: flex;
+  justify-content: end;
+  padding: 2%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.link {
+  color: rgb(255, 255, 255);
+  font-weight: 900;
+  font-size: 2rem;
+  margin: 0 2rem;
+}
+
+.bannerbar {
+  background-attachment: fixed;
+  background-image: linear-gradient(to right bottom, rgb(95, 95, 251), blue);
+  height: 1000px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: content-box;
+  position: relative;
+}
+
+.hero-text {
+  position: absolute;
+  top: 30%;
+  text-align: start;
+  color: rgb(255, 255, 255);
+  font-weight: 900;
+  font-family: "Times New Roman", Times, serif;
+  margin: 2%;
+}
+.hero-text h1 {
+  font-size: 5vw;
+  color: transparent;
+  /* -webkit-text-stroke: 0.05vw white; */
+  text-transform: uppercase;
+  padding-bottom: 2%;
+}
+.hero-text h1::before {
+  content: "MOVIE+REVIEW...";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: fit-content;
+  color: white;
+  border-right: 1px solid white;
+  overflow: hidden;
+  animation: animate 6s linear infinite;
+}
+@keyframes animate {
+  0% {
+    width: 0;
+  }
+  70%,
+  90% {
+    width: 100%;
+  }
+}
+.btn {
+  background-color: black;
+  color: white;
+  font-size: 3rem;
+  padding: 1%;
+  cursor: pointer;
+  border: none;
+}
+
+.bthn {
+  font-size: 60px;
+  cursor: pointer;
+  border: none;
+  color: white;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  align-items: center;
+  padding: 1%;
+}
+.list {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.list a {
+  color: white;
+  margin: 4%;
+  font-size: 1.7rem;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.headtitle {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background-color: gray;
+  font-family: monospace;
+}
+.noidea {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+}
+.listdecoration li {
+  text-decoration: none;
+  list-style: none;
+  font-size: 12px;
+  cursor: pointer;
+  color: white;
+  padding: 6% 0%;
+}
+.listdecoration {
+  background-color: rgb(0, 0, 0);
+  border: 2px solid white;
+}
+.reviews_element {
+  min-width: fit-content;
+  max-width: 60vw;
+  height: fit-content;
+
+  border: 2px solid white;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  font-size: 1rem;
+  color: white;
+  background-color: rgb(29, 20, 20);
+}
+
+.hero{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  align-items: center;
+ 
+}
+
+.hero h1{
+font-size: 9rem;
+color: white;
+font-family: sans-serif;
+letter-spacing: 1.1rem;
+text-align: center;
+margin-bottom: 3rem;
+margin-top: 22rem;
+}
+.hero h3{
+font-size: 1.5rem;
+color: white;
+font-family: sans-serif;
+letter-spacing: 1.1rem;
+text-align: center;
+
+
+}
+@media screen and (max-width:1010px){
+.hero h1{
+  font-size: 4rem;
+}
+
+}
+
+@media screen and (max-width:450px){
+.hero h1{
+  font-size: 2rem;
+}
+
+}

@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+@media screen and (max-width:1200px) {
+  html{
+  font-size: 60%;
+  }
+  
+}
+@media screen and (max-width:900px) {
+  html{
+    font-size: 55%;
+  }
+  
+}
+@media screen and (max-width:480px) {
+  html{
+    font-size: 50%;
+  }
+  
+}
+
+
+
+
+
+.signin_box {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.login_box {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.box {
+  height: fit-content;
+  width: fit-content;
+  background-color: white;
+  padding: 5%;
+  box-shadow: 2px 2px 5px black;
+  border-radius: 5px;
+  text-align: center;
+}
+input {
+  outline: none;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 1%;
+  margin: 1%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.box_items {
+  margin: 2%;
+}
+label {
+  margin: 2%;
+  font-size: medium;
+}
+.submit {
+  padding: 5%;
+  cursor: pointer;
+  background-color: rgb(176, 176, 230);
+  border: none;
+}
+.submit:hover {
+  background-color: orange;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+}
+.displaynone {
+  display: none;
+}
+.navbar {
+  display: flex;
+  justify-content: end;
+  padding: 2%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.link {
+  color: white;
+  font-weight: 900;
+  margin: 0% 1%;
+}
+
+.bannerbar {
+  background-attachment: fixed;
+  background-color: #cccccc;
+  height: 1000px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: content-box;
+  position: relative;
+}
+
+.hero-text {
+  position: absolute;
+  top: 30%;
+  text-align: start;
+  color: rgb(255, 255, 255);
+  font-weight: 900;
+  font-family: "Times New Roman", Times, serif;
+  margin: 2%;
+}
+.hero-text h1 {
+  font-size: 5vw;
+  color: transparent;
+  /* -webkit-text-stroke: 0.05vw white; */
+  text-transform: uppercase;
+  padding-bottom: 2%;
+}
+.hero-text h1::before {
+  content: "MOVIE+REVIEW...";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: fit-content;
+  color: white;
+  /* -webkit-text-stroke: 0vw transparent; */
+  border-right: 1px solid white;
+  overflow: hidden;
+  animation: animate 6s linear infinite;
+}
+@keyframes animate {
+  0% {
+    width: 0;
+  }
+  70%,
+  90% {
+    width: 100%;
+  }
+}
+/* document file style................................  */
+
+
+/* cast css ..................................  */
+
+.single__page{
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: rgb(42, 42, 42);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 40rem 70rem;
+  grid-row-gap: 5rem;
+  grid-column-gap: 1.5rem;
+}
+
+@media screen and (max-width: 1173px) {
+  .single__page{
+  grid-template-columns: 1fr ;
+  grid-template-rows: 50rem 40rem 50rem 40rem;
+  }
+
+.movie__detail__single{
+  text-align: center;
+}
+
+}
+
+.movie__image img{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+
+}
+.movie__image{
+  padding: 1rem;
+  width: 100%;
+}
+
+.movie__detail__single{
+  padding: 1rem;
+  width: 100%;
+}
+
+
+.movie__detail__single h3{
+  font-size: 3rem;
+  font-family: sans-serif;
+  color: rgb(212, 212, 212);
+  font-weight: 300;
+}
+.movie__detail__single p{
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  color: #cccccc;
+}
+
+
+
+.cast__section{
+  padding: 1rem;
+  width: 100%;
+
+}
+.cast__section h4{
+  text-align: center;
+  font-size: 3rem;
+  font-family: sans-serif;
+  color: rgb(212, 212, 212);
+  font-weight: 500;
+  margin-bottom: 1.1rem;
+ 
+}
+.cast__container{
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ gap: 1rem;
+ overflow-y: scroll;
+ height: 100%;
+ max-height: 90%;
+
+}
+.cast{
+  max-width: 20rem;
+  max-height: 20rem;
+  padding: 1.1rem;
+}
+.cast__img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.cast h5{
+  color: #cccccc;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.youtube__section{
+  padding: 1rem;
+}
+.youtube__section h4{
+  text-align: start;
+  font-size: 3rem;
+  font-family: sans-serif;
+  color: rgb(212, 212, 212);
+  font-weight: 500;
+  margin-bottom: 1.1rem;
+  width: 100%;
+}
+.youtube__error{
+  width: 100%;
+  height: 90%;
+  background-color: rgb(85, 85, 85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  color: #cccccc;
+}
+.youtube{
+  text-align: center;
+}
